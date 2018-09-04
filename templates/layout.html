@@ -5,10 +5,16 @@
 </head>
 <body>
     <h1>Welcome to Daniel's Website</h1>
-    <form>
+
+    <form method="post">
         <h2>What's your name?</h2>
         <input type="name" name="name" />
         <input type="submit" />
+        {% if name != "" %}
+        <p>
+            Welcome {{name}}
+        </p>
+        {% endif %}
     </form>
 
 
